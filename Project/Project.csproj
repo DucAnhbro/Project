@@ -66,6 +66,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Accounts\ForgotPass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Accounts\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +82,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Accounts\ForgotPass.xaml.cs">
+      <DependentUpon>ForgotPass.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Accounts\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -127,6 +134,7 @@
     <Resource Include="Images\user-icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\fogotpass.png" />
     <Content Include="Images\icon-email.png" />
     <Content Include="Images\register.png" />
   </ItemGroup>
